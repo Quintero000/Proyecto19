@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi Cliente Reddit</title>
+
+    <!-- Conectamos el archivo CSS -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <header class="encabezado">
+        <h1>Mi Cliente Reddit</h1>
+        <p>Explora tus comunidades favoritas</p>
+    </header>
+
+    <main class="contenedor">
+
+        <!-- Formulario para agregar subreddits -->
+        <form id="formulario">
+
+            <input
+                type="text"
+                id="nombreSubreddit"
+                placeholder="Ejemplo: javascript"
+                required
+            >
+
+            <button type="submit">
+                Agregar subreddit
+            </button>
+
+        </form>
+
+        <!-- Mensajes generales -->
+        <p id="mensaje"></p>
+
+        <!-- Aquí aparecerán los carriles -->
+        <section id="carriles" class="carriles">
+
+        </section>
+
+    </main>
+
+    <!-- Conectamos el archivo JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
